@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead">text here</p>
+  </header>
+
+  <div class="container-fluid">
+    <div id="calendar-row1" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <span id="time-1" class="times col-md-1">9 AM</span>
+      <textarea rows="4" id="event-text-1" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row2" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-2" class="times col-md-1">10 AM</div>
+      <textarea rows="4" id="event-text-2" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row3" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-3" class="times col-md-1">11 AM</div>
+      <textarea rows="4" id="event-text-3" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row4" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-4" class="times col-md-1">12 PM</div>
+      <textarea rows="4" id="event-text-4" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row5" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-5" class="times col-md-1">1 PM</div>
+      <textarea rows="4" id="event-text-5" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row6" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-6" class="times col-md-1">2 PM</div>
+      <textarea rows="4" id="event-text-6" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row7" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-7" class="times col-md-1">3 PM</div>
+      <textarea rows="4" id="event-text-7" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row8" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-8" class="times col-md-1">4 PM</div>
+      <textarea rows="4" id="event-text-8" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row9" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-9" class="times col-md-1">5 PM</div>
+      <textarea rows="4" id="event-text-9" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row10" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-10" class="times col-md-1">6 PM</div>
+      <textarea rows="4" id="event-text-10" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row11" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-11" class="times col-md-1">7 PM</div>
+      <textarea rows="4" id="event-text-11" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+    <div id="calendar-row12" class="row justify-content-md-center border-top border-bottom calendar-row">
+      <div id="time-12" class="times col-md-1">8 PM</div>
+      <textarea rows="4" id="event-text-12" class="col-md-10"></textarea>
+      <button id="saveBtn" class="col-md-1"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</html>
