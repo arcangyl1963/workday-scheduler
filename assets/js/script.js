@@ -96,8 +96,8 @@ function stringifywdObject() {
   localStorage.setItem('wdObject', JSON.stringify(wdObject));
 }
 
-function savetoLS(dayObject) {
-  localStorage.setItem('wdObject', JSON.stringify(dayObject));
+function savetoLS(dayObj) {
+  localStorage.setItem('wdObject', JSON.stringify(dayObj));
 }
 
 function saveTheSchedule(hrText, val) {
@@ -116,3 +116,12 @@ function updateCalendarTasks(dayObject) {
     $(this).children('textarea').text(dayObject[calRow.text()]);
   });
 }
+
+// Refresh the page every 1 minute to update currentDay time and invoke the dark / light mode switch
+$(document).ready(function() {
+    setInterval('refreshPage()', 60000);
+});
+
+function refreshPage() { 
+    location.reload(); 
+}  

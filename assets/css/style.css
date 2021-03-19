@@ -109,11 +109,11 @@ button {
   border-bottom-right-radius: 1rem;
   background-color: #06AED5;
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 #saveBtn i:hover {
   color: #fcf767;
-  font-size: 3rem;
+  font-size: 4rem;
   transition: all .3s ease-in-out;
 }
