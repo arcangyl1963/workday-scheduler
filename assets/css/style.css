@@ -1,15 +1,41 @@
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} */
-
+/* general styles for the body */
 body {
   display: inline-flexbox;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
+  color: black;
   line-height: 1;
 }
+/* dark & light mode theme styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color:darkslategray;
+  color: white;
+}
+/* The header and current day info text styles */
+.jumbotron {
+  text-align: center;
+  background-color: #c8eff8;
+  color: black;
+  border-radius: 0;
+  border-bottom: 1rem solid black;
+}
+
+.jumbotron h1 {
+  font-weight: 800;
+}
+#currentDay {
+  color: red;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+/* calendar styles */
 .container-fluid {
   display: inline-block;
   align-items: center;
@@ -24,9 +50,8 @@ body {
   padding: 2em 1em 0em 0em ;
 }
 
-
 textarea {
-  display: table-column;
+  display: inline-block;
   background: transparent;
   border: none;
   resize: none;
@@ -35,19 +60,7 @@ textarea {
   padding: 10px;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: #c8eff8;
-  color: black;
-  border-radius: 0;
-  border-bottom: 1rem solid black;
-}
-
-.jumbotron h1 {
-  font-weight: 800;
-}
-
-/* Text area time block styles */
+/* Text area time block bkgrd color styles */
 .prev-hour {
   background-color: rgb(189, 189, 189);
   border-color: gray;
@@ -62,22 +75,6 @@ textarea {
   background-color: rgb(90, 177, 90);
   border-color: rgb(41, 136, 41);
 }
-
-
-.description{
-  white-space: pre-wrap;
-}
-
-/* .time-block{
-  text-align: center;
-  border-radius: 15px;
-} */
-
-/* .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-} */
 
 .hour {
   background-color: #ffffff;
@@ -100,10 +97,13 @@ textarea {
   color: white;
 }
 
+/* Button styles */
 button {
-  display: inline-flexbox;
+  display: inline-block;
 }
+
 #saveBtn {
+  display: inline-flexbox;
   border-left: 1px solid black;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -113,31 +113,7 @@ button {
 }
 
 #saveBtn i:hover {
+  color: #fcf767;
   font-size: 3rem;
   transition: all .3s ease-in-out;
 }
-
-
-
-/* Small devices (landscape phones, 576px and up */
-/* @media (min-width: 576px) {
-  body {
-    min-width: none;
-    font-size: 1rem;
-  }
-  .container-fluid {
-    min-width: 100%;
-  }
-  button {
-    min-width: 95%;
-  }
-  #saveBtn {
-    min-width: 100%;
-    border-radius: .25rem;
-    font-size: 1rem;
-  }
-  #saveBtn i:hover {
-    font-size: 1.25rem;
-  }
-} */
-
